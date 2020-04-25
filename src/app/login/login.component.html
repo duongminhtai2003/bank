@@ -1,0 +1,15 @@
+<div class="wrapper">
+  <form class="form-signin">
+    <h2 class="form-signin-heading">Please login</h2>
+    <input id="" type="text" class="form-control" [(ngModel)]="login.phone" name="phone" placeholder="Phone" required=""
+      autofocus="" />
+    <input type="password" class="form-control" [(ngModel)]="login.password" name="password" required="" />
+    <label class="checkbox">
+      <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe" />
+      Remember me
+    </label>
+    <button class="btn btn-lg btn-primary btn-block" type="submit" (click)="loginAPI()">
+      Login
+    </button>
+  </form>
+</div>
